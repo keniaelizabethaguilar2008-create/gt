@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> 🌿 Chapins T</title>
+  <title> 🌿 Chapins </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&display=swap" rel="stylesheet">
@@ -51,12 +51,13 @@
       text-align: center;
     }
 
-    #inicio video {
-      width: 100%;
-      border-radius: 10px;
-      max-height: 500px;
-      object-fit: cover;
-    }
+    .hero {
+     background: url('img.jpeg') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+    
 
     #menu {
       background-color: #f0f5f0;
@@ -193,9 +194,9 @@
   </style>
 </head>
 <body>
-
+        <!-- 🔸 Barra de Navegación -->
   <header>
-    <h1>Restaurante GT</h1>
+    <h1>CHAPINS</h1>
     <nav>
       <a href="#inicio">Inicio</a>
       <a href="#menu">Menú</a>
@@ -203,11 +204,10 @@
       <a href="#redes">Redes Sociales</a>
     </nav>
   </header>
-
-  <section id="inicio" class="portada">
-    <div class="portada-contenido">
-    <div class="imagenes-portada">
-      <div class="ovalo-boton">
+       <!-- 🔸 Sección de Portada -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      
       <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9" alt="Comida típica" />
       <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Restaurante acogedor" />
         <a href="#menu" class="boton-menu">Ver Menú</a>
