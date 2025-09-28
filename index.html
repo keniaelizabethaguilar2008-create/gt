@@ -160,7 +160,36 @@
 .boton-portada:hover {
   background-color: #2e5336;
 }
+.ovalo-boton:hover {
+  transform: scale(1.05);
+}
 
+.ovalo-boton img {
+  display: block;
+  width: 320px;   /* puedes ajustar el tamaño */
+  height: 120px;  /* más alto = más ovalado vertical */
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.boton-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(60, 110, 71, 0.9);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.boton-menu:hover {
+  background-color: rgba(46, 83, 54, 0.95);
+}
   </style>
 </head>
 <body>
