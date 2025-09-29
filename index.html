@@ -3,166 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🌿 CHAPINS 🌿</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Libre Baskerville', serif;
-      background-color: #f8f8f2;
-      color: #2e2e2e;
-    }
-
-    header {
-      background-color: #e2efdc;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 40px;
-      position: sticky;
-      top: 0;
-    }
-
-    header h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 2rem;
-      color: #3c6e47;
-      margin: 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #2e2e2e;
-      margin-left: 20px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #3c6e47;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    #inicio 
-     background: url('ohno.jpeg') no-repeat center/cover;
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
-    }
-
-    #menu {
-      background-color: #f0f5f0;
-    }
-
-    .menu-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .menu-item {
-      background: #ffffff;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background-color: #e2efdc;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    .redes a {
-      margin: 0 10px;
-      color: #3c6e47;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-
-    .redes a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Delicias Express 🍔</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🌿 CHAPINS 🌿 </title>
-  </head>
-<body>
 
-   <!-- 🔸 Barra de Navegación -->
-<header>
-    <h1> Chapins </h1>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#menu">Menú</a>
-      <a href="#mision">Misión & Visión</a>
-      <a href="#redes">Redes Sociales</a>
+  <!-- 🟦 Barra de Navegación -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Delicias Express</h1>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#mision-vision">Misión y Visión</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- 🔸 Sección de Portada -->
-  <section id="inicio">
-    <div class="hero-content">
-    <video autoplay muted loop>
-      <source src="https://youtu.be/JZCLhRwXsHQ?si=dEdyNMyQt-In54ZY" type="video/mp4">
-      Tu navegador no soporta videos.
+  <!-- 🏠 Sección de Inicio -->
+  <section id="inicio" class="inicio">
+    <div class="banner">
+      <img src="imagenes/banner.jpg" alt="Banner de comida rápida">
+      <div class="banner-texto">
+        <h2>¡Bienvenido a Delicias Express!</h2>
+        <p>Comida rápida, sabor auténtico 😋🔥</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🍔 Sección del Menú -->
+  <section id="menu" class="menu">
+    <h2>🍽️ Nuestro Menú</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="imagenes/hamburguesa.jpg" alt="Hamburguesa">
+        <h3>Hamburguesas</h3>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/papas.jpg" alt="Papas fritas">
+        <h3>Papas Fritas</h3>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/pizza.jpg" alt="Pizza">
+        <h3>Pizza</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌟 Sección Misión y Visión -->
+  <section id="mision-vision" class="mision-vision">
+    <h2>🌟 Nuestra Misión y Visión</h2>
+    <div class="mv-container">
+      <div class="mv-box">
+        <h3>🍴 Misión</h3>
+        <p>
+          Ofrecer comida rápida deliciosa y de calidad, preparada con ingredientes frescos y servida con pasión.
+        </p>
+      </div>
+      <div class="mv-box">
+        <h3>🚀 Visión</h3>
+        <p>
+          Ser el restaurante preferido de todos, reconocidos por nuestro sabor único y atención excepcional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎥 Sección de Video -->
+  <section id="video" class="video-section">
+    <h2>🎬 Mira Nuestro Video</h2>
+    <video controls autoplay muted loop>
+      <source src="videos/video.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de videos.
     </video>
-      <h1>El sabor que une a los amigos</h1>
-      <p>Nachos, pizzas y postres irresistibles </p>
-      <a href="#menu" class="boton">Ver Menú</a>
-    </div>
   </section>
 
-  <!-- 🔸 Sección de Menú -->
-  <section id="menu">
-    <h2>Menú Destacado</h2>
-    <div class="menu-items">
-      <div class="menu-item">
-        <h3>Plato Chapín</h3>
-        <p>Una deliciosa combinación tradicional.</p>
-      </div>
-      <div class="menu-item">
-        <h3>Tamal de Elote</h3>
-        <p>Suave, dulce y auténtico.</p>
-      </div>
-      <div class="menu-item">
-        <h3>Chuchitos</h3>
-        <p>El sabor clásico de nuestra tierra.</p>
-      </div>
-    </div>
+  <!-- 📞 Sección de Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>📍 Contáctanos</h2>
+    <p>📌 Dirección: Calle Principal #123, Ciudad</p>
+    <p>📞 Teléfono: +502 1234 5678</p>
+    <p>📧 Email: contacto@deliciasexpress.com</p>
   </section>
 
-  <section id="mision">
-    <h2>Misión</h2>
-    <p>Ofrecer experiencias gastronómicas únicas que rescaten el sabor tradicional guatemalteco con un toque moderno.</p>
-
-    <h2>Visión</h2>
-    <p>Ser el restaurante más reconocido por promover la cultura y el sabor auténtico de Guatemala.</p>
-  </section>
-
-  <footer id="redes">
-    <p>Síguenos en nuestras redes sociales</p>
-    <div class="redes">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">TikTok</a>
-    </div>
-    <p>&copy; 2025 Restaurante GT - Todos los derechos reservados</p>
+  <!-- 🦶 Footer -->
+  <footer>
+    <p>© 2025 Delicias Express 🍔 | Todos los derechos reservados.</p>
   </footer>
 
 </body>
