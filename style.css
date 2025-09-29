@@ -1,38 +1,43 @@
-/* 🟦 Estilos Generales */
+/* 🎨 PALETA: Sea Green, Russian Green, Hunter Green, Sage */
+:root {
+  --sea: #2E8B57;
+  --russian: #679267;
+  --hunter: #355E3B;
+  --sage: #B2AC88;
+  --blanco: #ffffff;
+  --dorado: #d4af37;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #fff8f0;
+  font-family: 'Georgia', serif;
+  background-color: #f6f6f4;
   color: #333;
+  scroll-behavior: smooth;
 }
 
-/* 🧭 Barra de Navegación */
-header {
-  background-color: #e63946;
-  padding: 15px 30px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
+/* 🟩 NAVBAR */
 .navbar {
+  background-color: var(--hunter);
+  color: var(--blanco);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar .logo {
-  color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--dorado);
 }
 
 .navbar ul {
@@ -42,93 +47,114 @@ header {
 }
 
 .navbar a {
-  color: #fff;
+  color: var(--blanco);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: #ffcb77;
+  color: var(--dorado);
 }
 
-/* 🏠 Sección Inicio */
-.banner {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.banner-texto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* 🌿 HERO */
+.hero {
+  background: linear-gradient(rgba(53,94,59,0.6), rgba(53,94,59,0.6)), url('imagenes/banner-rest.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
+  color: var(--blanco);
   padding: 20px;
-  border-radius: 10px;
 }
 
-.banner-texto h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+.hero h1 {
+  font-size: 3rem;
 }
 
-/* 🍔 Menú */
-.menu {
-  padding: 50px 20px;
+.hero h1 span {
+  color: var(--dorado);
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.btn-reserva {
+  background-color: var(--dorado);
+  color: var(--hunter);
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-reserva:hover {
+  background-color: var(--sage);
+}
+
+/* 🍽️ MENÚ */
+.menu-section {
+  padding: 60px 20px;
   text-align: center;
 }
 
-.menu h2 {
-  margin-bottom: 30px;
+.menu-section h2 {
   font-size: 2rem;
-  color: #e63946;
+  color: var(--hunter);
+  margin-bottom: 30px;
 }
 
-.menu-grid {
+.menu-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
 }
 
 .menu-item {
-  background-color: white;
+  background-color: var(--blanco);
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 250px;
+  overflow: hidden;
+  width: 300px;
   transition: transform 0.3s;
 }
 
 .menu-item:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
 .menu-item img {
   width: 100%;
-  border-radius: 15px 15px 0 0;
+  height: 200px;
+  object-fit: cover;
 }
 
 .menu-item h3 {
-  padding: 15px;
-  color: #333;
+  margin-top: 15px;
+  color: var(--sea);
 }
 
-/* 🌟 Misión y Visión */
+.menu-item p {
+  padding: 0 15px 15px;
+  color: #555;
+}
+
+/* 🌱 Misión & Visión */
 .mision-vision {
+  background-color: var(--sage);
   padding: 60px 20px;
-  background-color: #ffffff;
   text-align: center;
+}
+
+.mision-vision h2 {
+  color: var(--hunter);
+  margin-bottom: 30px;
+  font-size: 2rem;
 }
 
 .mv-container {
@@ -136,56 +162,59 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .mv-box {
-  background-color: white;
+  background-color: var(--blanco);
+  padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 25px;
-  flex: 1 1 300px;
-  max-width: 450px;
-  transition: transform 0.3s ease;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.mv-box:hover {
-  transform: translateY(-5px);
-}
-
-/* 🎥 Video */
-.video-section {
+/* 🖼️ Galería */
+.galeria {
+  padding: 60px 20px;
   text-align: center;
-  padding: 40px 20px;
-  background-color: #fff8f0;
 }
 
-.video-section video {
-  width: 90%;
-  max-width: 800px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+.galeria h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--hunter);
 }
 
-/* 📞 Contacto */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 📞 CONTACTO */
 .contacto {
-  text-align: center;
+  background-color: var(--hunter);
+  color: var(--blanco);
   padding: 40px 20px;
-  background-color: #e63946;
-  color: white;
+  text-align: center;
 }
 
 .contacto h2 {
+  color: var(--dorado);
   margin-bottom: 15px;
 }
 
-/* 🦶 Footer */
+/* 🦶 FOOTER */
 footer {
+  background-color: #2a4730;
+  color: var(--blanco);
   text-align: center;
-  background-color: #222;
-  color: #fff;
-  padding: 15px 0;
+  padding: 15px 10px;
   font-size: 0.9rem;
 }
-
