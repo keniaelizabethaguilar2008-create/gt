@@ -12,10 +12,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
-  font-family: 'Georgia', serif;
+  font-family: 'Georgia', serif, ATHENE;
   background-color: #f6f6f4;
   color: #333;
   scroll-behavior: smooth;
@@ -38,6 +39,7 @@ body {
   font-size: 1.6rem;
   font-weight: bold;
   color: var(--dorado);
+  font-family: Athene;
 }
 
 .navbar ul {
@@ -59,14 +61,14 @@ body {
 
 /* 🌿 HERO */
 .hero {
-  background: linear-gradient(rgba(53,94,59,0.6), rgba(53,94,59,0.6)), url('imagenes/banner-rest.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(53,94,59,0.6), rgba(53,94,59,0.6)), url('ohno.jpeg') center/cover no-repeat;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: var(--blanco);
-  padding: 20px;
+  padding: 120px 20px;
 }
 
 .hero h1 {
