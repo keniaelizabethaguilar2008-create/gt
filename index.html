@@ -3,94 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Delicias Express 🍔</title>
+  <title>Restaurante Chapin`s</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- 🟦 Barra de Navegación -->
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Delicias Express</h1>
+  <!-- 🟩 BARRA DE NAVEGACIÓN -->
+  <header class="navbar">
+    <div class="logo">🌿  Chapin`s</div>
+    <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#menu">Menú</a></li>
-        <li><a href="#mision-vision">Misión y Visión</a></li>
-        <li><a href="#video">Video</a></li>
+        <li><a href="#mision-vision">Misión & Visión</a></li>
+        <li><a href="#galeria">Galería</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- 🏠 Sección de Inicio -->
-  <section id="inicio" class="inicio">
-    <div class="banner">
-      <img src="imagenes/banner.jpg" alt="Banner de comida rápida">
-      <div class="banner-texto">
-        <h2>¡Bienvenido a Delicias Express!</h2>
-        <p>Comida rápida, sabor auténtico 😋🔥</p>
+  <!-- 🌿 SECCIÓN INICIO / BANNER -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Bienvenido a <span> Chapin`s</span></h1>
+      <p>Una experiencia culinaria única, donde la elegancia se encuentra con el sabor.</p>
+      <a href="#menu" class="btn-reserva">Ver Menú</a>
+    </div>
+  </section>
+
+  <!-- 🍽️ SECCIÓN MENÚ -->
+  <section id="menu" class="menu-section">
+    <h2>Menú Destacado</h2>
+    <div class="menu-container">
+      <div class="menu-item">
+        <img src="imagenes/plato1.jpg" alt="Plato 1">
+        <h3>Ensalada de la Casa</h3>
+        <p>Fresca, saludable y llena de sabor natural.</p>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/plato2.jpg" alt="Plato 2">
+        <h3>Salmón en salsa de hierbas</h3>
+        <p>Delicado filete acompañado de vegetales orgánicos.</p>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/plato3.jpg" alt="Plato 3">
+        <h3>Risotto de espinaca</h3>
+        <p>Suave, cremoso y perfecto para paladares exigentes.</p>
       </div>
     </div>
   </section>
 
-  <!-- 🍔 Sección del Menú -->
-  <section id="menu" class="menu">
-    <h2>🍽️ Nuestro Menú</h2>
-    <div class="menu-grid">
-      <div class="menu-item">
-        <img src="imagenes/hamburguesa.jpg" alt="Hamburguesa">
-        <h3>Hamburguesas</h3>
-      </div>
-      <div class="menu-item">
-        <img src="imagenes/papas.jpg" alt="Papas fritas">
-        <h3>Papas Fritas</h3>
-      </div>
-      <div class="menu-item">
-        <img src="imagenes/pizza.jpg" alt="Pizza">
-        <h3>Pizza</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- 🌟 Sección Misión y Visión -->
+  <!-- 🌱 MISIÓN Y VISIÓN -->
   <section id="mision-vision" class="mision-vision">
-    <h2>🌟 Nuestra Misión y Visión</h2>
+    <h2>Nuestra Misión & Visión</h2>
     <div class="mv-container">
       <div class="mv-box">
-        <h3>🍴 Misión</h3>
-        <p>
-          Ofrecer comida rápida deliciosa y de calidad, preparada con ingredientes frescos y servida con pasión.
-        </p>
+        <h3>Misión</h3>
+        <p>Ofrecer platillos gourmet inspirados en la naturaleza, combinando sostenibilidad con excelencia gastronómica.</p>
       </div>
       <div class="mv-box">
-        <h3>🚀 Visión</h3>
-        <p>
-          Ser el restaurante preferido de todos, reconocidos por nuestro sabor único y atención excepcional.
-        </p>
+        <h3>Visión</h3>
+        <p>Ser el restaurante líder en cocina verde, reconocido por nuestro compromiso con el medio ambiente y el lujo sostenible.</p>
       </div>
     </div>
   </section>
 
-  <!-- 🎥 Sección de Video -->
-  <section id="video" class="video-section">
-    <h2>🎬 Mira Nuestro Video</h2>
-    <video controls autoplay muted loop>
-      <source src="videos/video.mp4" type="video/mp4">
-      Tu navegador no soporta la reproducción de videos.
-    </video>
+  <!-- 🖼️ GALERÍA -->
+  <section id="galeria" class="galeria">
+    <h2>Galería</h2>
+    <div class="galeria-grid">
+      <img src="imagenes/rest1.jpg" alt="restaurante elegante">
+      <img src="imagenes/rest2.jpg" alt="decoración natural">
+      <img src="imagenes/rest3.jpg" alt="platos gourmet">
+      <img src="imagenes/rest4.jpg" alt="ambiente interior">
+    </div>
   </section>
 
-  <!-- 📞 Sección de Contacto -->
-  <section id="contacto" class="contacto">
-    <h2>📍 Contáctanos</h2>
-    <p>📌 Dirección: Calle Principal #123, Ciudad</p>
-    <p>📞 Teléfono: +502 1234 5678</p>
-    <p>📧 Email: contacto@deliciasexpress.com</p>
-  </section>
+  <!-- 📞 CONTACTO -->
+    <section id="contacto" class="contacto">
+      <h2>Contáctanos</h2>
+      <p>📍 Avenida Principal, Ciudad Verde</p>
+      <p>📞 +502 1234 5678</p>
+      <p>✉️ contacto@verdeluxe.com</p>
+    </section>
 
-  <!-- 🦶 Footer -->
+  <!-- 🦶 PIE DE PÁGINA -->
   <footer>
-    <p>© 2025 Delicias Express 🍔 | Todos los derechos reservados.</p>
+    <p>© 2025 VerdeLuxe Restaurante — Todos los derechos reservados 🌿</p>
   </footer>
 
 </body>
