@@ -220,3 +220,29 @@ footer {
   padding: 15px 10px;
   font-size: 0.9rem;
 }
+.redes {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.redes a {
+  color: var(--blanco);       /* Cambia a un color que contraste con tu fondo */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.redes a i {
+  font-size: 1.5rem;   /* tamaño del ícono */
+}
+
+.redes a:hover {
+  color: var(--sage);  /* O otro color que combines bien */
+  transform: scale(1.1);
+}
