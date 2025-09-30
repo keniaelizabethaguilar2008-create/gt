@@ -12,11 +12,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
-  font-family: 'Georgia', serif, ATHENE;
+  font-family: 'Georgia', serif;
   background-color: #f6f6f4;
   color: #333;
   scroll-behavior: smooth;
@@ -39,7 +38,6 @@ body {
   font-size: 1.6rem;
   font-weight: bold;
   color: var(--dorado);
-  font-family: Athene;
 }
 
 .navbar ul {
@@ -61,14 +59,14 @@ body {
 
 /* 🌿 HERO */
 .hero {
-  background: linear-gradient(rgba(53,94,59,0.6), rgba(53,94,59,0.6)), url('ohno.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(53,94,59,0.6), rgba(53,94,59,0.6)), url('imagenes/banner-rest.jpg') center/cover no-repeat;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: var(--blanco);
-  padding: 120px 20px;
+  padding: 20px;
 }
 
 .hero h1 {
@@ -132,7 +130,7 @@ body {
 
 .menu-item img {
   width: 100%;
-  height: 600px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -220,15 +218,9 @@ footer {
   padding: 15px 10px;
   font-size: 0.9rem;
 }
-.redes {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
 
 .redes a {
-  color: var(--blanco);       /* Cambia a un color que contraste con tu fondo */
+  color: var(--blanco);      
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
@@ -245,51 +237,4 @@ footer {
 .redes a:hover {
   color: var(--sage);  /* O otro color que combines bien */
   transform: scale(1.1);
-}
-.menu {
-  padding: 100px 100px;
-  text-align: center;
-}
-
-.menu h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: var(--hunter);
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.plato {
-  overflow: hidden;           
-  border-radius: 15px;      
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  background-color: #fff;
-  transition: transform 0.3s ease;
-}
-
-.plato img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;          
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.plato:hover img {
-  transform: scale(1.2);       
-  z-index: 10;         
-}
-
-.plato:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-  
-.plato h3 {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  color: var(--sea);
 }
