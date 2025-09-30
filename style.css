@@ -275,12 +275,13 @@ footer {
   width: 100%;
   height: 200px;
   object-fit: cover;          
-  transition: transform 0.55s ease;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .plato:hover img {
   transform: scale(1.2);       
-  object-fit: contain;         
+  z-index: 10;         
 }
 
 .plato:hover {
