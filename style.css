@@ -59,7 +59,7 @@ body {
 
 /* 🌿 HERO */
 .hero {
-  background:linear-gradient(rgba(53,94,59,0.6), rgba(53,94,59,0.6)), url('ohno.jpg') center/cover no-repeat;
+  background:linear-gradient(rgba(53,94,59,0.6), rgba(53,94,59,0.6)), ('ohno.jpg') center/cover no-repeat;
   height: 80vh;
   display: flex;
   justify-content: center;
