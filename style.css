@@ -122,12 +122,12 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
-  width: 600px;
+  width: 300px;
   transition: transform 0.3s;
 }
 
 .menu-item:hover {
-  transform: scale(2.05);
+  transform: scale(1.05);
 }
 
 .menu-item img {
