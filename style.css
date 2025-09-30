@@ -127,7 +127,7 @@ body {
 }
 
 .menu-item:hover {
-  transform: scale(1.05);
+  transform: scale(2.05);
 }
 
 .menu-item img {
